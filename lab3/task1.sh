@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Вывести все пути из переменной PATH
+# echo $PATH | tr ':' '\n'
+
+# Добавить неверный путь в PATH
+# export PATH=$PATH:~/wrong/path
+
 # Разделение переменной PATH на массив
 IFS=':' read -ra paths <<< "$PATH"
 
